@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Projects = () => {
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 pt-20 pb-16">
+    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 pt-20 pb-16 ">
       <div className="container mx-auto px-4">
         <motion.h2
          className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 text-gray-800 dark:text-white" 
@@ -32,8 +32,7 @@ const Projects = () => {
                 Youtube Clone
               </h3>
               <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-4">
-              A full-stack youtube clone with user authentication and mongodb integration.
-              Built with MERN stack.
+              A full-stack YouTube clone application built using React, TypeScript, Node.js, and Express. It including video browsing, searching, and playing, providing a modern and responsive UI.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a 
@@ -59,8 +58,45 @@ const Projects = () => {
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
             <div className="relative">
               <img
-                src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1752253392/Screenshot_20250711_223243_wo45kw.png"
+                src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1754202473/aron-career-institute_s9soua.png"
                 alt="Project 2"
+                className="w-full h-48 sm:h-56 object-cover"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-30 transition-opacity duration-300"></div>
+            </div>
+            <div className="p-4 sm:p-6">
+              <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-800 dark:text-white">
+                Aron CareerInstitute
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-4">
+              A modern educational web platform it includes features like course listings, admission inquiries, faculty details contact forms and payment integratio as it designed to serve both students and administrators efficiently.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a 
+                  href="https://aron-career-institute.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors duration-200"
+                >
+                  View Demo
+                </a>
+                <a 
+                  href="https://github.com/Rogshivam/Aron-Career-Institute.git" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900 transition-colors duration-200"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* Project 3 */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
+            <div className="relative">
+              <img
+                src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1752253392/Screenshot_20250711_223243_wo45kw.png"
+                alt="Project 3"
                 className="w-full h-48 sm:h-56 object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-30 transition-opacity duration-300"></div>
@@ -92,16 +128,52 @@ const Projects = () => {
               </div>
             </div>
           </div>
+          {/* Project 4 */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
+            <div className="relative">
+              <img
+                src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1754202475/AI-content-generator_nqhrfw.png"
+                alt="Project 4"
+                className="w-full h-48 sm:h-56 object-cover"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-30 transition-opacity duration-300"></div>
+            </div>
+            <div className="p-4 sm:p-6">
+              <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-800 dark:text-white">
+                AI Content Generator
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-4">
+              A full-stack application that uses OpenAI's GPT-4 to generate text based on user prompts.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a 
+                  href="https://ai-assistant-tau-ten.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors duration-200"
+                >
+                  View Demo
+                </a>
+                <a 
+                  href="https://github.com/Rogshivam/Ai-assistant.git" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900 transition-colors duration-200"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </div>
 
-
-          {/* Project 3 */}
+          {/* Project 5 */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
             <div className="relative">
               <img
                 src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1746998202/nux579zc214ygrge39b7.png"
-                alt="Project 3"
+                alt="Project 5"
                 className="w-full h-48 sm:h-56 object-cover"
-              />
+              /> 
               <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-30 transition-opacity duration-300"></div>
             </div>
             <div className="p-4 sm:p-6">
@@ -132,12 +204,49 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          {/* Project 4 */}
+          {/* Project 6 */}
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
+            <div className="relative">
+              <img
+                src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1754204225/OP-Manager_cmzxh6.png"
+                alt="Project 6"
+                className="w-full h-48 sm:h-56 object-cover"
+              /> 
+              <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-30 transition-opacity duration-300"></div>
+            </div>
+            <div className="p-4 sm:p-6">
+              <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-800 dark:text-white">
+                Op-Manager
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-4">
+                This application facilitates efficient project management with role-based access control, team collaboration, and real-time task tracking.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a 
+                  href="https://opmanager.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors duration-200"
+                >
+                  View Demo
+                </a>
+                <a 
+                  href="https://github.com/Rogshivam/Operations-Manager-task-manager-.git" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900 transition-colors duration-200"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* Project 7 */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
             <div className="relative">
               <img
                 src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1746998202/bszpuuqoyc1db2lshwl9.png"
-                alt="Project 4"
+                alt="Project 7"
                 className="w-full h-48 sm:h-56 object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-30 transition-opacity duration-300"></div>
@@ -170,12 +279,12 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          {/* Project 5 */}
+          {/* Project 8*/}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
             <div className="relative">
               <img
                 src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1752652888/Screenshot_20250716_122600_ka9bsx.png"
-                alt="Project 5"
+                alt="Project 8"
                 className="w-full h-48 sm:h-56 object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-30 transition-opacity duration-300"></div>
@@ -208,12 +317,12 @@ const Projects = () => {
             </div>
           </div>
 
-          {/* Project 6 */}
+          {/* Project 9 */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
             <div className="relative">
               <img
                 src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1752651468/Screenshot_20250716_130329_ragzht.png"
-                alt="Project 6"
+                alt="Project 9"
                 className="w-full h-48 sm:h-56 object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-30 transition-opacity duration-300"></div>
@@ -246,12 +355,12 @@ const Projects = () => {
             </div>
           </div>
 
-          {/* Project 7 */}
+          {/* Project 10 */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
             <div className="relative">
               <img
                 src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1747030554/brle6nvp1qkgyfatkabh.png"
-                alt="Project 7"
+                alt="Project 10"
                 className="w-full h-48 sm:h-56 object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-30 transition-opacity duration-300"></div>
@@ -283,12 +392,12 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          {/* Project 8 */}
+          {/* Project 11*/}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
             <div className="relative">
               <img
                 src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1747993550/w7s6kmx7wvw7g6srtq5e.png"
-                alt="Project 8"
+                alt="Project 11"
                 className="w-full h-48 sm:h-56 object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-30 transition-opacity duration-300"></div>
@@ -320,12 +429,12 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          {/* Project 9 */}
+          {/* Project 12*/}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
             <div className="relative">
               <img
                 src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1746998202/o6k37esd4jkbvk0kssz4.png"
-                alt="Project 9"
+                alt="Project 12"
                 className="w-full h-48 sm:h-56 object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-30 transition-opacity duration-300"></div>
@@ -357,12 +466,12 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          {/* Project 10 */}
+          {/* Project 13 */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
             <div className="relative">
               <img
                 src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1747993550/ngp9poxumuox9ixcdjtc.png"
-                alt="Project 8"
+                alt="Project 13"
                 className="w-full h-48 sm:h-56 object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-30 transition-opacity duration-300"></div>
@@ -395,12 +504,12 @@ const Projects = () => {
             </div>
           </div>
           
-          {/* Project 11 */}
+          {/* Project 14 */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
             <div className="relative">
               <img
                 src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1747993551/yskiqllqkzj9bz5z4ufq.png"
-                alt="Project 9"
+                alt="Project 14"
                 className="w-full h-48 sm:h-56 object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-30 transition-opacity duration-300"></div>
@@ -432,12 +541,12 @@ const Projects = () => {
               </div>
             </div>
           </div>
-          {/* Project 12 */}
+          {/* Project 15*/}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
             <div className="relative">
               <img
                 src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1747993550/c1g4qjhnwwgxzk6k7yjs.png"
-                alt="Project 10"
+                alt="Project 15"
                 className="w-full h-48 sm:h-56 object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-30 transition-opacity duration-300"></div>
@@ -460,6 +569,43 @@ const Projects = () => {
                 </a>
                 <a 
                   href="https://github.com/Rogshivam/TODO-LIST.git" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900 transition-colors duration-200"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* Project 16*/}
+          <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
+            <div className="relative">
+              <img
+                src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1752256564/tic-tac-toe_vloqmc.png"
+                alt="Project 16"
+                className="w-full h-48 sm:h-56 object-cover"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-20 hover:bg-opacity-30 transition-opacity duration-300"></div>
+            </div>
+            <div className="p-4 sm:p-6">
+              <h3 className="text-xl sm:text-2xl font-bold mb-2 text-gray-800 dark:text-white">
+                Tic Tac Toe
+              </h3>
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-4">
+                This is a simple and interactive tic-tac-toe web application. It allows users to play both at same time. The application is built using HTML, CSS, and JavaScript.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a 
+                  href="https://tic-tac-toe-gamma-eight-54.vercel.app/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="flex-1 text-center bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors duration-200"
+                >
+                  View Demo
+                </a>
+                <a 
+                  href="https://github.com/Rogshivam/tic-tac-toe.git" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex-1 text-center bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900 transition-colors duration-200"
