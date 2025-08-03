@@ -1,14 +1,22 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 pt-20 pb-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 text-gray-800 dark:text-white">
+        <motion.h2
+         className="text-2xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 text-gray-800 dark:text-white" 
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
           My Projects
-        </h2>
+        </motion.h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+        <motion.div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8" initial={{ opacity: 0, scale: 0.98 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}>
           {/* Project 1 */}
           <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-[1.02]">
             <div className="relative">
@@ -464,7 +472,7 @@ const Projects = () => {
           
           
           
-        </div>
+        </motion.div>*
       </div>
     </div>
   );

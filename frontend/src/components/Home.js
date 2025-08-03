@@ -1,45 +1,85 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import About from './About';
+import Contact from './Contact';
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-gray-100 dark:bg-gray-900 pt-20">
-      <div className="container mx-auto px-4 py-8 sm:py-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="text-center">
-            <div className="mb-8">
-              <img
-                src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1747996179/wkxus9cr05i2ncsvtb5d.jpg"
-                alt="Profile"
-                className="mx-auto h-48 w-48 sm:h-64 sm:w-64 rounded-full object-cover shadow-lg border-4 border-white dark:border-gray-800"
-              />
-            </div>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-              <span className="block">Hi, I'm Shivam Kumar</span>
-              <span className="block text-indigo-600 dark:text-indigo-400 mt-2">Full Stack Developer</span>
-            </h1>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8 px-4">
-              I build modern web applications using the latest frameworks and tools. I'm passionate about crafting clean, intuitive, and responsive user experiences that seamlessly combine performance with elegant design.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4 px-4">
-              <Link
-                to="/projects"
-                className="w-full sm:w-auto px-8 py-3 text-center bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors duration-200"
-              >
-                View Projects
-              </Link>
-              <Link
-                to="/contact"
-                className="w-full sm:w-auto px-8 py-3 text-center border-2 border-indigo-600 text-indigo-600 dark:text-indigo-400 rounded-lg hover:bg-indigo-50 dark:hover:bg-indigo-900/20 transition-colors duration-200"
-              >
-                Contact Me
-              </Link>
-            </div>
+    <main className="min-h-screen bg-gray-100 dark:bg-gray-900 pt-20 text-gray-800 dark:text-gray-100">
+      <section className="container mx-auto px-4 pt-10">
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: 'easeOut' }}
+          className="max-w-4xl mx-auto text-center"
+        >
+          <div className="mb-10">
+            <motion.img
+              src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1747996179/wkxus9cr05i2ncsvtb5d.jpg"
+              alt="Shivam Kumar"
+              className="mx-auto h-48 w-48 sm:h-64 sm:w-64 rounded-full object-cover shadow-xl border-4 border-white dark:border-gray-800"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: 'spring', stiffness: 200 }}
+            />
           </div>
+
+          <motion.h1
+            className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight mb-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+          >
+            Hi, I'm Shivam Kumar
+            <span className="block text-blue-600 dark:text-blue-400 mt-2">
+              Full Stack Developer
+            </span>
+          </motion.h1>
+
+          <motion.p
+            className="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-8"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.4 }}
+          >
+            I build modern web applications using the latest frameworks and tools. I'm passionate about crafting clean, intuitive, and responsive user experiences that seamlessly combine performance with elegant design.
+          </motion.p>
+
+          <motion.div
+            className="flex flex-col sm:flex-row justify-center gap-4"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.6 }}
+          >
+            <Link
+              to="/projects"
+              className="w-full sm:w-auto px-8 py-3 text-center bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 shadow-md"
+            >
+              View Projects
+            </Link>
+            <Link
+              to="/contact"
+              className="w-full sm:w-auto px-8 py-3 text-center border-2 border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/30 transition duration-300"
+            >
+              Contact Me
+            </Link>
+          </motion.div>
+        </motion.div>
+      </section>
+
+      <section className="bg-white dark:bg-gray-800 ">
+        <div className="container mx-auto px-o ">
+          <About />
         </div>
-      </div>
-    </div>
+      </section>
+
+      <section className="bg-gray-50 dark:bg-gray-900 pb-20 ">
+        <div className="container mx-auto px-0">
+          <Contact />
+        </div>
+      </section>
+    </main>
   );
 };
 
-export default Home; 
+export default Home;
