@@ -261,7 +261,7 @@ const Projects = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
                 <a 
-                  href="https://blog-website-pga1.onrender.com/" 
+                  href="https://blogosite.vercel.app/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex-1 text-center bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors duration-200"
@@ -269,7 +269,7 @@ const Projects = () => {
                   View Demo
                 </a>
                 <a 
-                  href="https://github.com/Rogshivam/blog_website.git" 
+                  href="https://github.com/Rogshivam/blog-website.git" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="flex-1 text-center bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-900 transition-colors duration-200"

@@ -84,7 +84,7 @@ const Home = () => {
 
   return (
     <main className="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 min-h-screen">
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-7 text-center">
+      <section className="container mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-7 text-center">
         <motion.img
           src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1747996179/wkxus9cr05i2ncsvtb5d.jpg"
           alt="Shivam Kumar"
