@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import GithubContributionGraph from './Github/GitHubContributions';
+import HeroSection from './Herosection';
 
 const skills = {
   Frontend: ['React', 'Next.js', 'Tailwind CSS', 'CSS', 'HTML', 'JavaScript'],
@@ -84,28 +84,10 @@ const Home = () => {
 
   return (
     <main className="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-100 min-h-screen">
-      <section className="container mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-7 text-center">
-        <motion.img
-          src="https://res.cloudinary.com/dn0bmsj49/image/upload/v1747996179/wkxus9cr05i2ncsvtb5d.jpg"
-          alt="Shivam Kumar"
-          className="mx-auto h-40 w-40 sm:h-56 sm:w-56 rounded-full object-cover shadow-lg border-4 border-white dark:border-gray-800"
-        />
-        <h1 className="mt-6 text-3xl sm:text-4xl font-bold">
-          Hi, I'm Shivam Kumar
-          <span className="block text-blue-600 dark:text-blue-400">Full Stack Developer</span>
-        </h1>
-        <p className="mt-4 max-w-2xl mx-auto text-gray-600 dark:text-gray-300 text-sm sm:text-base">
-          I build modern, responsive web applications that combine performance with clean design.
-        </p>
-        <div className="mt-6 flex flex-col sm:flex-row justify-center gap-4">
-          <Link to="/projects" className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
-            View Projects
-          </Link>
-          <Link to="/contact" className="px-6 py-3 border border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/30">
-            Contact Me
-          </Link>
-        </div>
-      </section>
+         
+      <HeroSection />
+
+      <GithubContributionGraph />
 
       <section className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 space-y-12">
         <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-6 sm:p-10 space-y-8">
@@ -163,6 +145,7 @@ const Home = () => {
           </form>
         </div>
       </section>
+      
     </main>
   );
 };
